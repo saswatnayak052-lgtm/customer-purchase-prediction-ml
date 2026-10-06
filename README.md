@@ -6,21 +6,21 @@ An end-to-end data analytics and machine learning project using Python and Power
 
 ## 📊 Business Intelligence & Key Data Insights
 
-Project ke data analysis aur Power BI dashboard se niche diye gaye important business insights nikal kar aaye hain:
+The deep data analysis and interactive Power BI dashboard revealed several critical business insights:
 
-* **📱 Mobile-First Consumer Base:** Analytics se pata chala hai ki sabse zyada traffic aur peak session durations Mobile devices se aa rahe hain. Business ke liye mobile user experience ko optimize karna sabse badi priority hai.
-* **📈 High-Intent Engagement Curve:** Hamaare engineered feature (`engagement_score = time_on_site × pages_viewed`) aur purchase behaviors ke beech ek strong positive correlation hai. Ek specific engagement score cross karte hi conversion ka chance 99% tak badh jata hai.
-* **🔁 Customer Retention Success:** Store ka conversion rate returning users aur high cart items waale users se driven hai. Dashboard ke mutaabik, lagbhag 4.2K returning users directly purchase funnel mein convert ho rahe hain, jo customer loyalty ko prove karta hai.
+* **📱 Mobile-First Consumer Base:** Analytics show that the highest volume of user traffic and peak session durations originate from mobile devices. Optimizing the mobile user experience is the highest strategic priority for the business.
+* **📈 High-Intent Engagement Curve:** A strong positive correlation exists between our engineered feature (`engagement_score = time_on_site × pages_viewed`) and conversion behavior. Once a specific engagement threshold is crossed, the probability of conversion accelerates up to 99%.
+* **🔁 Effective Customer Retention:** The store's conversion rate is heavily driven by returning users and customers with high cart counts. The dashboard shows approximately 4.2K returning users converting directly into the purchase funnel, validating the success of customer loyalty metrics.
 
 ---
 
 ## 📌 Project Objectives
 
-Is project ka main goal e-commerce metrics ko analyze karna aur ek predictive framework banana hai:
-1. **Data Cleaning:** Missing numerical/categorical values ko treat karna aur duplicate rows ko handle karna.
-2. **Feature Engineering:** Domain-specific custom metric (`engagement_score`) create karna jo user interaction depth ko track kare.
-3. **Exploratory Data Analysis (EDA):** Session times, bounce rates, aur device preferences ke patterns ko map karna.
-4. **Predictive Modeling:** Machine Learning models train karna taaki customer ka final conversion status accurately predict kiya ja sake.
+The primary goal of this project is to analyze e-commerce metrics and establish a predictive framework through:
+1. **Data Cleaning:** Imputing missing numerical/categorical values and handling duplicate rows.
+2. **Feature Engineering:** Creating a domain-specific custom metric (`engagement_score`) to map user interaction depth.
+3. **Exploratory Data Analysis (EDA):** Mapping behavioral trends across session times, bounce rates, and device preferences.
+4. **Predictive Modeling:** Training Machine Learning models to accurately classify and predict final customer purchase status.
 
 ---
 
@@ -36,7 +36,7 @@ Is project ka main goal e-commerce metrics ko analyze karna aur ek predictive fr
 
 ## 🔍 Dataset Features & Architecture
 
-Machine learning models processed the following features from the clickstream dataset:
+The machine learning models process the following customer tracking features:
 
 * **Age:** Age of the customer.
 * **Gender:** Female / Male.
@@ -53,11 +53,11 @@ Machine learning models processed the following features from the clickstream da
 
 ## 🤖 Machine Learning Pipeline & Results
 
-Data preprocessing pipeline mein missing values ko handle karne ke liye numerical columns par median imputation aur categorical columns par mode imputation ka use kiya gaya hai. Data leakages se bachne ke liye preprocess kiye gaye data ko **80% training** aur **20% testing** splits mein partition kiya gaya.
+The preprocessing pipeline handles missing values using median imputation for numerical attributes and mode imputation for categorical predictors. To eliminate data leakage and ensure stable validation, the processed data is partitioned into an **80% training** and **20% testing** validation split.
 
-Dono trained models ka classification accuracy performance niche diya gaya hai:
-* **Logistic Regression Model:** Achieved ~99% validation accuracy (max_iter=1000).
-* **Random Forest Classifier:** Achieved ~99% validation accuracy (n_estimators=50, max_depth=5).
+The classification performance of both deployed models is detailed below:
+* **Logistic Regression Model:** Achieved ~99% validation accuracy (configured with `max_iter=1000`).
+* **Random Forest Classifier:** Achieved ~99% validation accuracy (configured with `n_estimators=50`, `max_depth=5`).
 
 ---
 
@@ -71,4 +71,6 @@ Dono trained models ka classification accuracy performance niche diya gaya hai:
 
 ## 🚀 Future Improvements
 
-* Predictive Random Forest model ko FastAPI application ke sath wrap karke real-time prediction microservice banana.
+* Wrapping the predictive Random Forest model with a FastAPI application to create a real-time prediction microservice.
+* Integrating real-time streaming data queues directly with the dashboard architecture for dynamic reporting.
+  
