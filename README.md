@@ -73,4 +73,5 @@ The classification performance of both deployed models is detailed below:
 
 * Wrapping the predictive Random Forest model with a FastAPI application to create a real-time prediction microservice.
 * Integrating real-time streaming data queues directly with the dashboard architecture for dynamic reporting.
-  
+ ## Screen Short 
+ https://github.com/saswatnayak052-lgtm/customer-purchase-prediction-ml/blob/main/Screenshot%20(116).png
